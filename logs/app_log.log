@@ -51,3 +51,127 @@ Identify and stop the process that's listening on port 8809 or configure this ap
 2018-10-20 23:13:37.575  INFO 8340 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
 2018-10-20 23:13:37.579  INFO 8340 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2018-10-20 23:13:37.580  INFO 8340 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-20 23:16:47.996  INFO 6756 --- [main] example.Application                      : Starting Application on MS-20171231KOHV with PID 6756 (started by Administrator in D:\java\INTELLIJ IDEA\search_select)
+2018-10-20 23:16:48.000  INFO 6756 --- [main] example.Application                      : The following profiles are active: home
+2018-10-20 23:16:48.685  INFO 6756 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e6f3f28: startup date [Sat Oct 20 23:16:48 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 23:16:49.751  WARN 6756 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[example]' package. Please check your configuration.
+2018-10-20 23:16:49.794  INFO 6756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-20 23:16:49.847  INFO 6756 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018-10-20 23:16:51.180  INFO 6756 --- [main] org.xnio                                 : XNIO version 3.3.6.Final
+2018-10-20 23:16:51.209  INFO 6756 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2018-10-20 23:16:51.398  WARN 6756 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2018-10-20 23:16:51.399  WARN 6756 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2018-10-20 23:16:51.442  INFO 6756 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2018-10-20 23:16:51.442  INFO 6756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2763 ms
+2018-10-20 23:16:51.896  INFO 6756 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-20 23:16:51.904  INFO 6756 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-20 23:16:51.906  INFO 6756 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-10-20 23:16:51.906  INFO 6756 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-20 23:16:51.907  INFO 6756 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-20 23:16:51.907  INFO 6756 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-20 23:16:51.907  INFO 6756 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2018-10-20 23:16:52.529  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e6f3f28: startup date [Sat Oct 20 23:16:48 GMT+08:00 2018]; root of context hierarchy
+2018-10-20 23:16:52.664  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/multiSearchSelect]}" onto public java.lang.String example.multi_search_select.MultiSearchSelectController.multiSearchSelect()
+2018-10-20 23:16:52.666  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchSelect]}" onto public java.lang.String example.search_select.controller.SearchSelectController.toSearchSelect()
+2018-10-20 23:16:52.669  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-20 23:16:52.670  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-20 23:16:52.736  INFO 6756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 23:16:52.737  INFO 6756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 23:16:52.820  INFO 6756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-20 23:16:54.601  INFO 6756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-20 23:16:54.603  INFO 6756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-20 23:16:54.610  INFO 6756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-20 23:16:54.618  INFO 6756 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-20 23:16:54.636  INFO 6756 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-20 23:16:54.747  INFO 6756 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8809 (http)
+2018-10-20 23:16:54.755  INFO 6756 --- [main] example.Application                      : Started Application in 8.144 seconds (JVM running for 9.101)
+2018-10-23 21:02:59.266  INFO 9148 --- [main] example.Application                      : Starting Application on MS-20171231KOHV with PID 9148 (started by Administrator in D:\java\INTELLIJ IDEA\search_select)
+2018-10-23 21:02:59.313  INFO 9148 --- [main] example.Application                      : The following profiles are active: home
+2018-10-23 21:02:59.857  INFO 9148 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60410cd: startup date [Tue Oct 23 21:02:59 GMT+08:00 2018]; root of context hierarchy
+2018-10-23 21:03:00.955  WARN 9148 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[example]' package. Please check your configuration.
+2018-10-23 21:03:00.985  INFO 9148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-23 21:03:01.045  INFO 9148 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018-10-23 21:03:02.369  INFO 9148 --- [main] org.xnio                                 : XNIO version 3.3.6.Final
+2018-10-23 21:03:02.399  INFO 9148 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2018-10-23 21:03:02.529  WARN 9148 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2018-10-23 21:03:02.529  WARN 9148 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2018-10-23 21:03:02.569  INFO 9148 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2018-10-23 21:03:02.569  INFO 9148 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2712 ms
+2018-10-23 21:03:03.021  INFO 9148 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-23 21:03:03.031  INFO 9148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 21:03:03.031  INFO 9148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-10-23 21:03:03.031  INFO 9148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 21:03:03.031  INFO 9148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 21:03:03.031  INFO 9148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 21:03:03.031  INFO 9148 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2018-10-23 21:03:03.658  INFO 9148 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60410cd: startup date [Tue Oct 23 21:02:59 GMT+08:00 2018]; root of context hierarchy
+2018-10-23 21:03:03.772  INFO 9148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/multiSearchSelect]}" onto public java.lang.String example.multi_search_select.MultiSearchSelectController.multiSearchSelect()
+2018-10-23 21:03:03.772  INFO 9148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchSelect]}" onto public java.lang.String example.search_select.controller.SearchSelectController.toSearchSelect()
+2018-10-23 21:03:03.782  INFO 9148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 21:03:03.782  INFO 9148 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 21:03:03.842  INFO 9148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 21:03:03.842  INFO 9148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 21:03:03.934  INFO 9148 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 21:03:06.154  INFO 9148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 21:03:06.164  INFO 9148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-23 21:03:06.164  INFO 9148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-23 21:03:06.174  INFO 9148 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-23 21:03:06.194  INFO 9148 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-23 21:03:06.334  INFO 9148 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-10-23 21:03:06.344 ERROR 9148 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8809 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8809 or configure this application to listen on another port.
+
+2018-10-23 21:03:06.364  INFO 9148 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60410cd: startup date [Tue Oct 23 21:02:59 GMT+08:00 2018]; root of context hierarchy
+2018-10-23 21:03:06.364  INFO 9148 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-10-23 21:03:06.384  INFO 9148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-23 21:03:06.384  INFO 9148 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-23 21:03:22.178  INFO 8480 --- [main] example.Application                      : Starting Application on MS-20171231KOHV with PID 8480 (started by Administrator in D:\java\INTELLIJ IDEA\search_select)
+2018-10-23 21:03:22.183  INFO 8480 --- [main] example.Application                      : The following profiles are active: home
+2018-10-23 21:03:22.790  INFO 8480 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4241e0f4: startup date [Tue Oct 23 21:03:22 GMT+08:00 2018]; root of context hierarchy
+2018-10-23 21:03:23.704  WARN 8480 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[example]' package. Please check your configuration.
+2018-10-23 21:03:23.744  INFO 8480 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-23 21:03:23.804  INFO 8480 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2018-10-23 21:03:25.164  INFO 8480 --- [main] org.xnio                                 : XNIO version 3.3.6.Final
+2018-10-23 21:03:25.184  INFO 8480 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.6.Final
+2018-10-23 21:03:25.344  WARN 8480 --- [main] io.undertow.websockets.jsr               : UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2018-10-23 21:03:25.344  WARN 8480 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2018-10-23 21:03:25.374  INFO 8480 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2018-10-23 21:03:25.374  INFO 8480 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2594 ms
+2018-10-23 21:03:25.920  INFO 8480 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-23 21:03:25.930  INFO 8480 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 21:03:25.930  INFO 8480 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2018-10-23 21:03:25.930  INFO 8480 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 21:03:25.930  INFO 8480 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 21:03:25.930  INFO 8480 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 21:03:25.930  INFO 8480 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'resourceUrlEncodingFilter' to: [/*]
+2018-10-23 21:03:26.524  INFO 8480 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4241e0f4: startup date [Tue Oct 23 21:03:22 GMT+08:00 2018]; root of context hierarchy
+2018-10-23 21:03:26.654  INFO 8480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/multiSearchSelect]}" onto public java.lang.String example.multi_search_select.MultiSearchSelectController.multiSearchSelect()
+2018-10-23 21:03:26.654  INFO 8480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/searchSelect]}" onto public java.lang.String example.search_select.controller.SearchSelectController.toSearchSelect()
+2018-10-23 21:03:26.667  INFO 8480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 21:03:26.668  INFO 8480 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 21:03:26.746  INFO 8480 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 21:03:26.746  INFO 8480 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 21:03:26.838  INFO 8480 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 21:03:28.926  INFO 8480 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-23 21:03:28.926  INFO 8480 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-23 21:03:28.926  INFO 8480 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-10-23 21:03:28.936  INFO 8480 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-23 21:03:28.956  INFO 8480 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-23 21:03:29.066  INFO 8480 --- [main] b.c.e.u.UndertowEmbeddedServletContainer : Undertow started on port(s) 8888 (http)
+2018-10-23 21:03:29.087  INFO 8480 --- [main] example.Application                      : Started Application in 8.33 seconds (JVM running for 9.317)
+2018-10-23 21:03:51.334  INFO 8480 --- [XNIO-2 task-1] io.undertow.servlet                      : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 21:03:51.334  INFO 8480 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-23 21:03:51.359  INFO 8480 --- [XNIO-2 task-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms

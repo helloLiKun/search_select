@@ -147,7 +147,7 @@ function  SearchSelect(data) {
         if(txt.length>5){
             txtShow=txt.substring(0,5);
         }
-        showElement.append("<button type='button' class='btn btn-default btn-xs' id='"+btnId+"'>"+txtShow+"<span class='glyphicon glyphicon-remove' aria-hidden='true'  id="+delId+"></span></button>")
+        showElement.append("<button type='button' class='btn btn-default btn-xs' title='"+txt+"' id='"+btnId+"'>"+txtShow+"<span class='glyphicon glyphicon-remove' aria-hidden='true'  id="+delId+"></span></button>")
         $('#'+delId).click(function () {
             removeChecked(val,btnId);
         })
