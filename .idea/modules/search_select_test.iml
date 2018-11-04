@@ -29,6 +29,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-redis:1.5.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
     <orderEntry type="library" name="Gradle: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-test:1.5.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: io.undertow:undertow-core:1.4.15.Final" level="project" />
     <orderEntry type="library" name="Gradle: io.undertow:undertow-servlet:1.4.15.Final" level="project" />
