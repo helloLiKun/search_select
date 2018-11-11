@@ -10,6 +10,24 @@ function show(dom) {
 function hide(dom) {
     dom.css('display','none');
 }
+
+var debounce=function(wait,fun,val) {
+    var now=new Date().getTime();
+    if(last==0 || sto==null){
+        sto=setTimeout(function () {
+            fun(val);
+        },wait)
+    }else{
+        if((now-last)<wait){
+            clearTimeout(sto);
+        }
+        sto=setTimeout(function () {
+            fun(val);
+        },wait)
+    }
+    last=now;
+}
+
 function  SearchSelect(data) {
     var liHeight=30;
     var self = this;
