@@ -29,7 +29,9 @@
 
 
     </form>
+    <input id="split-id">
     <button @click="getChecked">获取选中值</button>
+    <button @click="testSplit">testSplit</button>
 </div>
 <script type="text/javascript" th:src="${'/lib/jquery.min.js'}"></script>
 <script type="text/javascript" th:src="${'/lib/bootstrap/js/bootstrap.min.js'}"></script>
@@ -38,6 +40,33 @@
 
 </body>
 <script>
+    var lirownum=11;
+    var rownum=5;
+    function getLiHeigth(val) {
+        if(val!=null && val.length>0){
+            var num=Math.floor(val.length/lirownum);
+            return val.length%lirownum==0?num*30:(num+1)*30;
+        }
+        return 0;
+    }
+    function getText(val) {
+        if(val!=null && val.length>lirownum){
+            var result='';
+            var num=Math.ceil(val.length/lirownum);
+            for(var i=0;i<num;i++){
+                var space="<br>";
+                if(i==num-1){
+                    space="";
+                }
+                result+=val.substring(lirownum*i,lirownum*i+lirownum)+space;
+            }
+            return result;
+        }else{
+            return val;
+        }
+    }
+
+
     var vm;
     var search1=null;
     var search2=null;
@@ -46,6 +75,12 @@
         data: {
         },
         methods: {
+            testSplit:function () {
+                var val=$('#split-id').val();
+                console.log('val:'+val)
+                console.log('split:'+getText(val))
+                console.log('height:'+getLiHeigth(val))
+            },
             getChecked:function () {
                 if(search1!=null){
                     alert('search1-val:'+search1.checked)
