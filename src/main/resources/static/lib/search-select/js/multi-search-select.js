@@ -1,6 +1,24 @@
 /**
  * Created by Administrator on 2018/9/24 0024.
  */
+var sto=null;
+var last=0;
+var debounce=function(wait,fun,val) {
+    var now=new Date().getTime();
+    if(last==0 || sto==null){
+        sto=setTimeout(function () {
+            fun(val);
+        },wait)
+    }else{
+        if((now-last)<wait){
+            clearTimeout(sto);
+        }
+        sto=setTimeout(function () {
+            fun(val);
+        },wait)
+    }
+    last=now;
+}
 $("body").click(function(){
     hide($('.search-select-cls'));
 });
@@ -53,7 +71,7 @@ function  SearchSelect(data) {
     inputElement.bind("input propertychange",function () {
         var val=inputElement.val();
         if(val!=null && val.trim()!=''){
-            flushOptions(val.trim())
+            debounce(2000,flushOptions,val.trim())
         }
     });
 

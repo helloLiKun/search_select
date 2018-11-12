@@ -1,16 +1,8 @@
 /**
  * Created by Administrator on 2018/9/24 0024.
  */
-$("body").click(function(){
-    hide($('.search-select-cls'));
-});
-function show(dom) {
-    dom.css('display','block');
-}
-function hide(dom) {
-    dom.css('display','none');
-}
-
+var sto=null;
+var last=0;
 var debounce=function(wait,fun,val) {
     var now=new Date().getTime();
     if(last==0 || sto==null){
@@ -26,6 +18,15 @@ var debounce=function(wait,fun,val) {
         },wait)
     }
     last=now;
+}
+$("body").click(function(){
+    hide($('.search-select-cls'));
+});
+function show(dom) {
+    dom.css('display','block');
+}
+function hide(dom) {
+    dom.css('display','none');
 }
 
 function  SearchSelect(data) {
@@ -74,7 +75,7 @@ function  SearchSelect(data) {
     inputElement.bind("input propertychange",function () {
         var val=inputElement.val();
         if(val!=null && val.trim()!=''){
-            flushOptions(val.trim())
+            debounce(2000,flushOptions,val.trim())
         }
     });
 
@@ -146,7 +147,6 @@ function  SearchSelect(data) {
         e.stopPropagation();
         showElement.text(e.data.txt);
         self.checked=e.data.val;
-        self.checkedChange();
         hide(divElement);
     }
 
@@ -159,6 +159,6 @@ function  SearchSelect(data) {
             }
         }
     }
-    flushTrs(options);
     initVal();
+    flushTrs(options);
 }
